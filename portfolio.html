@@ -37,18 +37,13 @@
       <div class="container main-nav">
         <nav class="header-nav">
           <a href="/index.html" lang="en" class="logo">
-            <span class="logo-start">Web</span>Studio</a
-          >
+            <span class="logo-start">Web</span>Studio</a>
           <ul class="site-nav list">
             <li class="item">
-              <a href="./index.html" class="link">Студія</a>
+              <a href="./index.html" class=" link">Студія</a>
             </li>
             <li class="item">
-              <a
-                href="./portfolio.html"
-                class="current link"
-                >Портфоліо</a
-              >
+              <a href="./portfolio.html" class="current link">Портфоліо</a>
             </li>
             <li class="item">
               <a href="" class="link">Контакти</a>
@@ -56,15 +51,18 @@
           </ul>
         </nav>
         <ul class="site-contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
+          <li class="item site-contact-icons">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="envelope" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>info@devstudio.com
+            </a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link"
-              >+38(069) 111-11-11</a
-            >
+          <li class="item site-contact-icons">
+            <a href="tel:+380961111111" class="link"><svg class="envelope" width="10" height="16">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38(069) 111-11-11</a>
           </li>
         </ul>
       </div>
@@ -219,39 +217,58 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="/index.html" class="logo">
-          <span class="logo-start">Web</span
-          ><span class="logo-end">Studio</span></a
-        >
-        <address>
-          <ul class="footer-communication list">
-            <li class="item">
-              <a
-                href="http://surl.li/dadrl"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-address link"
-              >
-                м. Київ, пр-т Лесі Українки, 26</a
-              >
+      <div class="container footer-parts">
+        <div class="footer-address">
+          <a href="/index.html" class="logo">
+            <span class="logo-start">Web</span><span class="logo-end">Studio</span></a>
+          <address>
+            <ul class="footer-communication list">
+              <li class="item">
+                <a href="http://surl.li/dadrl" target="_blank" rel="noopener noreferrer" class="footer-address link">
+                  м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="footer-contact link">info@devstudio.com</a>
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="footer-contact link">+38(069) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p class="footer-title">приєднуйтесь</p>
+          <ul class="footer-icons list">
+            <li class="footer-icons-item">
+              <a href="" class="icon-footer">
+                <svg width="20" height="20" class="svg-social-footer">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="footer-contact link"
-                >info@devstudio.com</a
-              >
+            <li class="footer-icons-item">
+              <a href="" class="icon-footer">
+                <svg width="20" height="20" class="svg-social-footer">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a
-                href="tel:+380961111111"
-                class="footer-contact link"
-                >+38(069) 111-11-11</a
-              >
+            <li class="footer-icons-item">
+              <a href="" class="icon-footer">
+                <svg width="20" height="20" class="svg-social-footer">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icons-item">
+              <a href="" class="icon-footer">
+                <svg width="20" height="20" class="svg-social-footer">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

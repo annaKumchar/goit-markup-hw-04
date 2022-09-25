@@ -6,6 +6,7 @@
   --primary-white-color: #ffffff;
   --title-grey-color: #2f303a;
   --button-secondary-bgc: #f5f4fa;
+  --icon-primary-color: #AFB1B8;
 }
 
 body {
@@ -113,12 +114,27 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+
+  display: flex;
+  align-items: center;
 }
 
 .site-contacts {
   display: flex;
   margin-left: auto;
+  justify-content: center;
+  align-items: center;
 }
+
+.site-contacts-icons {
+  align-items: center;
+  justify-content: center;
+}
+.envelope {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /* Hero */
 .section {
   padding-top: 94px;
@@ -130,6 +146,12 @@ img {
   text-align: center;
   text-transform: uppercase;
   background-color: var(--title-grey-color);
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/background.jpg)
 }
 .hero-title {
   font-weight: 900;
@@ -161,6 +183,17 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
+/* Icon features */
+.icon-feutures {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-secondary-bgc);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 .feature {
   display: flex;
 }
@@ -186,7 +219,8 @@ img {
 }
 .work-section {
   padding-top: 0;
-}
+} 
+
 
 /* Наша команда */
 .team-list {
@@ -194,6 +228,10 @@ img {
 }
 .team-list .team-item + .team-item {
   margin-left: 30px;
+}
+.team-item {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-description {
   padding: 30px 0 30px 0;
@@ -204,7 +242,6 @@ img {
 
 .member {
   margin-bottom: 10px;
-
   font-weight: 500;
   font-size: 16px;
 }
@@ -215,7 +252,58 @@ img {
 .team-section {
   background-color: rgba(245, 244, 250, 1);
 }
+/* Иконки соцсетей команды */
+.icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icon-primary-color);
+}
+.icons-list .team-icons + .team-icons{
+  margin-left: 10px;
+}
+.icons:focus,
+.icons:hover {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color)
+}
+/* Постійні клієнти */
+.clients-list {
+  display: flex;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+.icon-clients {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icon-primary-color);
+  border-radius: 4px;
+  fill: var(--icon-primary-color);
+}
 
+.icon-clients:focus,
+.icon-clients:hover {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.clients-list .clients-item+.clients-item {
+  margin-left: 30px;
+}
 /* Footer */
 .footer {
   padding-top: 60px;
@@ -248,6 +336,46 @@ footer {
 .footer-communication .link:focus {
   color: var(--accent-color);
 }
+.footer-parts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.footer-social {
+  margin-left: 70px;
+  align-items: top;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer-icons-item:not(:first-child){
+  margin-left: 10px;
+}
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);}
+
+.icon-footer:hover,
+.icon-footer:focus {
+  background-color: var(--accent-color);
+}
 /* Portfolio */
 .button-list {
   display: flex;
@@ -271,6 +399,7 @@ footer {
 .secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .project-list {
   display: flex;
@@ -284,6 +413,10 @@ footer {
 .project-item {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.project-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-item:nth-child(3n) {
   margin-right: 0;
